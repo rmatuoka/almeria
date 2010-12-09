@@ -1,0 +1,2 @@
+class SitecontactsController < ApplicationController
+end

@@ -1,0 +1,33 @@
+
+		#Box_noticias{
+			top:80px;
+			background:#F7F7F7;
+			position:relative;
+			width:265px;
+			height:560px;
+			
+		  }
+		  
+			  
+			  .Boxfont{
+				  font-family:Verdana, Geneva, sans-serif;
+				  font-size:12px;
+				  font:bold;
+			  }
+			  
+				  .Box_texto{
+						position:relative;
+						top:-470px;
+						left:480px;
+						width:450px;
+						height:300px;
+					}
+					.Box_noticias ul{
+						margin-top:-2334px;
+						}
+				.Tit_interna {
+					position:relative;
+					left:-20px;
+					
+				}
+		    
