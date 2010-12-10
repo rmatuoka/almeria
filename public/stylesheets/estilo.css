@@ -48,14 +48,10 @@ body
 	#Geral #Header
 	{
 		width:100%;
-		height:97px;
-		padding-top:87px;
+		height:150px;
+		padding-top:27px;
 	}
 	
-	#Geral #Header #Logo
-	{
-		
-	}
 	
 	#Geral #Header #Menu
 	{
@@ -311,3 +307,7 @@ body
 {
 	clear:both;	
 }
+
+.tbTitulo{font-family:Verdana, Geneva, sans-serif;font-size:14px; text-align:center; color:#0CF; font-size:large;}
+.tbItems{font-family:Verdana, Geneva, sans-serif; font-size:10px; text-align:center; }
+.Alinha{ display:inline;}
