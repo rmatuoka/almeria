@@ -5,6 +5,9 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :profissionais
   map.resources :sitecontacts
   map.resources :tratamentos
+  map.resources :noticias
+  map.resources :home, :singular => :home_item
+  map.resources :centro, :singular => :centro_item
   
   map.root :controller => "home"
   

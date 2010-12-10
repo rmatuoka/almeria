@@ -1,0 +1,9 @@
+<h2>NOTÍCIAS</h2>
+	<%if !@Noticias.blank?%>
+	<%@Noticias.each do |n|%>
+		<div id="Noticia">
+        	<a href="#" class="Titulo"><%=n.created_at.to_date.strftime("%d/%m/%Y")%> | <%=n.title%></a><br />
+            <a href="#" class="Texto"><%=n.summary%></a>
+        </div>
+	<%end%>
+<%end%>

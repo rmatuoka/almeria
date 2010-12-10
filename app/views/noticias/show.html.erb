@@ -1,0 +1,20 @@
+<%content_for :class do%>
+bgInterna
+<%end%>
+
+<%content_for :breadcrumb do%>
+	<div id="BreadCrumb">
+    	<a href="/">almeria</a> • o centro
+    </div>
+<%end%>
+
+<div id="BoxLeft">
+	<h1><%=@Noticia.title%></h1>
+    <p>
+	<%=@Noticia.body%>
+
+    </p>
+</div>
+<div id="BoxRight">
+	<%=render :file => "/layouts/_noticias.html.erb"%>
+</div>

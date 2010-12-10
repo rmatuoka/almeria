@@ -1,26 +1,45 @@
-<%content_for :destaque do %>
-	<img src="/images/destaque.jpg" width="962" height="300" /></div>
+<%content_for :destaque do%>
+	<div id="Destaque"><img src="images/destaques/destaque1.png" /></div>
 <%end%>
 
-<div class="inline">
-		<img src="/images/tit_qmsomos.png" width="193" height="28" />
-	<a  href="quemsomos.html"><img src="/images/back_quad1.png" width="366" height="135" border="0" />
-	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p></a>
-</div>
-	<div class="inline">
-		<img src="/images/tit_trata.png" width="204" height="23" />
-	<img src="/images/back_quad2.png" width="460" height="142" />
-	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
-</div>
-<div class="inline">
-	<img src="/images/tit_depo.png" width="198" height="23" />
-	<p style="text-align:center;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
-	<br><br>
-	<i>"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam."</i><br><br><img src="/images/btn_vjamais.png" width="82" height="27" /></p>  
-</div>
-<div class="inline">
-	<img src="/images/tit_notic.png" width="128" height="29" />
-	<li>15/04/2010 | Palestra Fasterm</li><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</p>
-	<li>15/04/2010 | Palestra Fasterm</li><p>"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam."</p>
-	<li>15/04/2010 | Palestra Fasterm</li><p>"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam."</p>
-</div>
+<div id="Box">
+        	<h1><img src="images/tit_quemsomos.png" /></h1>
+            <img src="images/dest_quemsomos.jpg" />
+            <p>
+            	<a href="" target="">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</a>
+            </p>
+        </div>
+        
+        <div id="Box">
+        	<h1><img src="images/tit_tratamento.png" /></h1>
+            <img src="images/dest_tratamentos.jpg" />
+            <p>
+            	<a href="" target="">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</a>
+            </p>
+        </div>
+        
+         <div id="Box">
+        	<h1><img src="images/tit_depoimentos.png" /></h1>
+            <p>
+            	Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.
+            </p>
+            <br />
+            <p style="text-align:center !important;"><i>"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam."</i></p>
+        	<br />
+            <p style="text-align:right;"><b>Lorem ipsum</b></p>
+            <br />
+            <p style="text-align:right;"><%=link_to image_tag("bt_vejamais.gif"), depoimentos_path%></p>
+        </div>
+        
+        <div id="Box">
+        	<h1><img src="images/tit_noticias.png" /></h1>
+            
+			<%if !@Noticias.blank?%>
+				<%@Noticias.each do |n|%>
+					<div id="Noticia">
+			            <%=link_to n.created_at.to_date.strftime("%d/%m/%Y"), noticias_path(n), :class => "Titulo" %> | <%=link_to n.title, noticias_path(n), :class => "Titulo" %><br>
+						<%=link_to n.summary, noticia_path(n), :class => "Texto"%>
+			        </div>
+				<%end%>
+			<%end%>
+        </div>

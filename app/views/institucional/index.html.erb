@@ -1,20 +1,22 @@
-<%content_for :head do%>
-	<%=stylesheet_link_tag "institucional"%>
-	<%=stylesheet_link_tag "internas"%>
+<%content_for :class do%>
+bgInterna
 <%end%>
-<div class="Tit_interna" > <img src="img/int_qmsms.png" width="1024" height="68" /></div>
-<div id="Box_noticias" align="center">
-<img src="img/tit_noticiasbox.png" width="265" height="36" />
-        <ul>
-        <li class="Boxfont">0000-noticia1 <p>Lorem ipsum dolor sit , consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna</p></li>
-        <li class="Boxfont">0000-noticia2 <p>Lorem ipsum dolor sit , consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna</p></li>
-        <li class="Boxfont">0000-noticia3 <p>Lorem ipsum dolor sit , consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna</p></li>
-        <li class="Boxfont">0000-noticia4 <p>Lorem ipsum dolor sit , consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna</p></li>
-        <li class="Boxfont">0000-noticia5 <p>Lorem ipsum dolor sit , consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna</p></li>
-        </ul>
- </div>
 
-<div class="Box_texto">
-    <div  align="center"><img src="img/logo_almeria.png" width="243" height="61" /></div>
-    <p>Lorem ipsum dolor sit , consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam. </p>
+<%content_for :breadcrumb do%>
+	<div id="BreadCrumb">
+    	<a href="/">almeria</a> • institucional
+    </div>
+<%end%>
+
+<div id="BoxLeft">
+	<h1>INSTITUCIONAL</h1>
+    <p>
+Criado em (MÊS) de 2010, o Almeria é um centro de reabilitação destinado a dependentes de álcool e drogas. Com o objetivo de oferecer tratamentos diferenciados e focados também na família dos dependentes, o centro atende aos pacientes no interior de São Paulo. Próximos à natureza, os pacientes sentem ainda mais a importância de lutarem pela própria vida.<br>
+<br>
+Cuidar de adictos é um trabalho que deve ser desempenhado com dedicação, amor e paciência. Todas essas são características do Almeria. Para a equipe do centro, o paciente e a família estão em primeiro lugar, por isso todos trabalham em conjunto para que seja possível atender às mais variadas camadas da sociedade. Entender o problema para buscar a melhor forma de tratá-lo é imprescindível para o Almeria.<br>
+<br>
+    </p>
+</div>
+<div id="BoxRight">
+	<%=render :file => "/layouts/_noticias.html.erb"%>
 </div>

@@ -7,4 +7,8 @@ class ApplicationController < ActionController::Base
 
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
+  
+  def get_notices
+    @Noticias = Notice.all(:conditions => ['published = 1'], :order => "id desc", :limit => "6")
+  end
 end

@@ -1,0 +1,20 @@
+<div id="Footer">
+    <div id="Dados">
+    	<p>
+        ALMERIA<br />
+		<br />
+        Rua Lorem Ipsum dolor, 383 - Sao Paulo - SP - Brasil<br />
+        (11) 8383-8383<br />
+        contato@almeria.com.br<br />
+        </p>
+    </div>
+    <div id="Menu">
+    	<a href="#">Principal |</a> 
+        <a href="#">Institucional | </a>
+        <a href="#">Tratamentos | </a>
+        <a href="#">Profissionais | </a>
+        <a href="#">Depoimentos | </a>
+        <a href="#">Unidades | </a>
+        <a href="#">Contato</a>
+    </div>
+</div>
