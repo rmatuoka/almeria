@@ -229,6 +229,15 @@ body
 			margin-bottom:55px;
 		}
 		
+		#Geral #Content #BoxLeft h2
+		{
+			font-family: Arial !important;
+			font-size:20px !important;
+			color:#99CC33 !important;
+			font-weight:100;
+			margin-bottom:15px;
+		}
+		
 		#Geral #Content #BoxLeft p
 		{
 			font-family: Verdana !important;

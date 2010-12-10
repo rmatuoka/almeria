@@ -1,9 +1,0 @@
-<h2>NOTÍCIAS</h2>
-<%if !@Noticias.blank?%>
-	<%@Noticias.each do |n|%>
-		<div id="Noticia">
-            <%=link_to n.created_at.to_date.strftime("%d/%m/%Y"), noticias_path(n), :class => "Titulo" %> | <%=link_to n.title, noticias_path(n), :class => "Titulo" %><br>
-			<%=link_to n.summary, noticia_path(n), :class => "Texto"%>
-        </div>
-	<%end%>
-<%end%>

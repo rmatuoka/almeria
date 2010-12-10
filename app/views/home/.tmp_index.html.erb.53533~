@@ -6,7 +6,10 @@
         	<h1><img src="images/tit_quemsomos.png" /></h1>
             <img src="images/dest_quemsomos.jpg" />
             <p>
-            	<a href="" target="">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</a>
+            	<a href="" target="">
+            		<!-- TEXTO QUEM SOMOS AQUI -->
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.
+				</a>
             </p>
         </div>
         
@@ -14,7 +17,10 @@
         	<h1><img src="images/tit_tratamento.png" /></h1>
             <img src="images/dest_tratamentos.jpg" />
             <p>
-            	<a href="" target="">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</a>
+            	<a href="" target="">
+            		<!-- TEXTO TRATAMENTOS -->
+            		Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.
+				</a>
             </p>
         </div>
         
@@ -37,10 +43,9 @@
 			<%if !@Noticias.blank?%>
 				<%@Noticias.each do |n|%>
 					<div id="Noticia">
-		            	<a href="#" class="Titulo"><%=n.created_at.to_date.strftime("%d/%m/%Y")%> | <%=n.title%></a><br />
-		                <a href="#" class="Texto"><%=n.summary%></a>
-		            </div>
+			            <%=link_to n.created_at.to_date.strftime("%d/%m/%Y"), noticias_path(n), :class => "Titulo" %> | <%=link_to n.title, noticias_path(n), :class => "Titulo" %><br>
+						<%=link_to n.summary, noticia_path(n), :class => "Texto"%>
+			        </div>
 				<%end%>
 			<%end%>
-
         </div>

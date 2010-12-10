@@ -4,12 +4,12 @@ bgInterna
 
 <%content_for :breadcrumb do%>
 	<div id="BreadCrumb">
-    	<a href="">almeria</a> • <a href="">seção</a> • <a href="">página</a>
+    	<a href="/">almeria</a> • depoimentos
     </div>
 <%end%>
 
 <div id="BoxLeft">
-	<h1>TÍTULO</h1>
+	<h1>DEPOIMENTOS</h1>
     <p>
     <img src="images/marcacao.jpg" align="left" /> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. <br />
     <br />
