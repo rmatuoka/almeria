@@ -55,6 +55,7 @@ body
 	
 	#Geral #Header #Menu
 	{
+		margin-top:-10px;
 		width:963px;
 		height:38px;
 		background-image:url('/images/bg_menu.png');
