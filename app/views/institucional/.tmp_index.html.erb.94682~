@@ -43,7 +43,7 @@ Cuidar de adictos é um trabalho que deve ser desempenhado com dedicação, amor
 				
 				<div>
 					<%= lightbox_image_tag("Galeria/Thumbs/DSC_6703.jpg", "/images/Galeria/DSC_6703.jpg", {:class=>"images"}, :title => "Almeria") %>
-					<%= lightbox_image_tag("Galeria/Thumbs/DSC_6687.jpg", "/images/Galeria/DSC_6687.jpg", {:class=>"images"}, :title => "Almeria") %>
+					<%= lightbox_image_tag("Galeria/Thumbs/DSC_6740.jpg", "/images/Galeria/DSC_6740.jpg", {:class=>"images"}, :title => "Almeria") %>
 					<%= lightbox_image_tag("Galeria/Thumbs/DSC_6648.jpg", "/images/Galeria/DSC_6648.jpg", {:class=>"images"}, :title => "Almeria") %>
 				</div>
 		   </div>
