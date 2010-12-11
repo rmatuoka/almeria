@@ -28,24 +28,8 @@ Cuidar de adictos é um trabalho que deve ser desempenhado com dedicação, amor
 		   
 		   <!-- root element for the items -->
 		   <div class="items">		   
-				<div>
-					<%= lightbox_image_tag("Galeria/Thumbs/DSC_6602.jpg", "/images/Galeria/DSC_6602.jpg", {:class=>"images"}, :title => "Almeria") %>
-					<%= lightbox_image_tag("Galeria/Thumbs/DSC_6603.jpg", "/images/Galeria/DSC_6603.jpg", {:class=>"images"}, :title => "Almeria") %>
-			      	<%= lightbox_image_tag("Galeria/Thumbs/DSC_6616.jpg", "/images/Galeria/DSC_6616.jpg", {:class=>"images"}, :title => "Almeria") %>
-					<%= lightbox_image_tag("Galeria/Thumbs/DSC_6617.jpg", "/images/Galeria/DSC_6617.jpg", {:class=>"images"}, :title => "Almeria") %>
-				</div>
-				<div>
-					<%= lightbox_image_tag("Galeria/Thumbs/DSC_6639.jpg", "/images/Galeria/DSC_6639.jpg", {:class=>"images"}, :title => "Almeria") %>
-					<%= lightbox_image_tag("Galeria/Thumbs/DSC_6645.jpg", "/images/Galeria/DSC_6645.jpg", {:class=>"images"}, :title => "Almeria") %>
-					<%= lightbox_image_tag("Galeria/Thumbs/DSC_6621.jpg", "/images/Galeria/DSC_6621.jpg", {:class=>"images"}, :title => "Almeria") %>
-					<%= lightbox_image_tag("Galeria/Thumbs/DSC_6637.jpg", "/images/Galeria/DSC_6637.jpg", {:class=>"images"}, :title => "Almeria") %>
-				</div>
-				
-				<div>
-					<%= lightbox_image_tag("Galeria/Thumbs/DSC_6703.jpg", "/images/Galeria/DSC_6703.jpg", {:class=>"images"}, :title => "Almeria") %>
-					<%= lightbox_image_tag("Galeria/Thumbs/DSC_6740.jpg", "/images/Galeria/DSC_6740.jpg", {:class=>"images"}, :title => "Almeria") %>
-					<%= lightbox_image_tag("Galeria/Thumbs/DSC_6648.jpg", "/images/Galeria/DSC_6648.jpg", {:class=>"images"}, :title => "Almeria") %>
-				</div>
+				<%= lightbox_image_tag("Galeria/Thumbs/DSC_6602.jpg", "Galeria/DSC_6602.jpg", {:class=>"images"}, :title => "Titulo") %>
+		      	
 		   </div>
 		   
 		</div>
@@ -64,6 +48,8 @@ Cuidar de adictos é um trabalho que deve ser desempenhado com dedicação, amor
 		$j("#browsable").scrollable().navigator();	
 		});
 		</script>
+		
+		<div id="update_foto" class="FotoGrandeGaleria"></div>
 </div>
 <div id="BoxRight">
 	<%=render :file => "/layouts/_noticias.html.erb"%>

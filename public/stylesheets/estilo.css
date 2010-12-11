@@ -308,6 +308,17 @@ body
 	clear:both;	
 }
 
-.tbTitulo{font-family:Verdana, Geneva, sans-serif;font-size:14px; text-align:center; color:#0CF; font-size:large;}
-.tbItems{font-family:Verdana, Geneva, sans-serif; font-size:10px; text-align:center; }
+.tbTitulo{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:13px; 
+	text-align:left; 
+	color:#99CC33 !important; 
+}
+.tbItems
+{
+	text-align:left; 
+	font-family: Verdana !important;
+	font-size:10px !important;
+	color:#666666 !important;
+}
 .Alinha{ display:inline;}
