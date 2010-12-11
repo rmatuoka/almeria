@@ -3,8 +3,8 @@
     	<p>
         ALMERIA<br />
 		<br />
-        Rua Lorem Ipsum dolor, 383 - Sao Paulo - SP - Brasil<br />
-        (11) 8383-8383<br />
+        Av. São João, 56 - Sala 4 - Atibaia - SP - Brasil<br />
+        (11) 2427 - 2454<br>
         contato@almeria.com.br<br />
         </p>
     </div>
@@ -13,7 +13,7 @@
         <%=link_to "Institucional | ", institucional_path%>
         <%=link_to "Tratamentos | ", tratamentos_path%>
         <%=link_to "Profissionais | ", profissionais_path%>
-        <%=link_to "Depoimentos | ", depoimentos_path%>
+        <%=link_to "Plantão 24hs | ", plantao_path%>
         <%=link_to "O Centro | ", centro_path%>
         <%=link_to "Contato", sitecontacts_path%>
     </div>

@@ -454,7 +454,35 @@ A equipe de profissionais do Almeria também sabe a importância da ginástica l
     <td class="tbItems">RECOLHER</td>
   </tr>
 </table>
-
+<br><br>
+<h2>Lista de Pertences</h2>
+<p>
+5 Camisetas<br>
+3 Bermudas<br>
+5 Cuecas<br>
+5 Pares de meia<br>
+2 Calças jeans<br>
+2 Conjuntos de moletom<br>
+1 Cobertor ou edredom<br>
+1 Travesseiro<br>
+2 Fronhas<br>
+2 Lençóis<br>
+1 Par de chinelos<br>
+1 Tênis<br>
+Pasta de dente<br>
+Escova de dente, Fio dental<br>
+Pente ou escova, cortador de unha<br>
+Barbeador<br>
+Shampoo, sabonetes e saboneteira<br>
+Desodorante rollon ( Não é permitido spray)<br>
+Gel sem álcool<br>
+Sabão em pedra<br>
+Sabão em pó<br>
+Prendedor de roupa e balde<br>
+ <br>
+*Solicitar autorização da administração da Clínica para qualquer outro pertence que não conste na lista acima<br>
+	
+</p>
 </div>
 <div id="BoxRight">
 	<%=render :file => "/layouts/_noticias.html.erb"%>
