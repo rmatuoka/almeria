@@ -9,6 +9,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :home, :singular => :home_item
   map.resources :centro, :singular => :centro_item
   map.resources :busca, :singular => :busca_item
+  map.resources :plantao, :singular => :plantao_item
   
   map.root :controller => "home"
   
