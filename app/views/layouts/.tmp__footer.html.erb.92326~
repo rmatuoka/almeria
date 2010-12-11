@@ -13,7 +13,7 @@
         <%=link_to "Institucional | ", institucional_path%>
         <%=link_to "Tratamentos | ", tratamentos_path%>
         <%=link_to "Profissionais | ", profissionais_path%>
-        <%=link_to "Plantão 24hs | ", plantao_path%>
+        <%=link_to "Depoimentos | ", depoimentos_path%>
         <%=link_to "O Centro | ", centro_path%>
         <%=link_to "Contato", sitecontacts_path%>
     </div>
